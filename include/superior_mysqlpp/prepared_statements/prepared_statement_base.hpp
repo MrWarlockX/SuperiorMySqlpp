@@ -346,6 +346,13 @@ namespace SuperiorMySqlpp
                 return result;
             }
 
+            /**
+             *  LowLevel::Statement::affectedRows() propagation
+             *  @return number of affected rows
+             */
+            auto affectedRows() {
+                return this->statement.affectedRows();
+            }
 
         public:
             /**
